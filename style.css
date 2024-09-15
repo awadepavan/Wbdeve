@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: ; */
 }
 
 html,
@@ -102,33 +101,23 @@ body {
   justify-content: center;
 }
 
-#right {
-  border: 2px solid black;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-#right i {
-  color: black;
-}
-
+#right,
 #left {
   border: 2px solid black;
   border-radius: 50%;
   background-color: #fff;
 }
 
+#right i,
 #left i {
   color: black;
 }
 
 #second {
   width: 100%;
-  /* height: 100vh; */
   background-color: black;
   color: #fff;
   padding-top: 50px;
-  /* padding-bottom: 50px; */
   padding-right: 10vw;
 }
 
@@ -137,12 +126,11 @@ body {
   border-top: 1px solid #8888;
   text-transform: uppercase;
   padding: 3.5vw 3vw;
-  padding-right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative; /* Add this */
-  overflow: hidden; /* Ensures images stay within bounds */
+  position: relative;
+  overflow: hidden;
 }
 
 .elem h1 {
@@ -243,4 +231,94 @@ body {
   font-weight: 500;
   color: #fff;
   text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #nav a {
+    font-size: 16px;
+  }
+
+  #heading h1 {
+    font-size: 12vw;
+  }
+
+  #herofooter {
+    font-size: 4vw;
+    padding: 15px 20px;
+  }
+
+  #about {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  #textabout {
+    width: 100%;
+    padding: 0;
+  }
+
+  #textabout a {
+    font-size: 10px;
+  }
+
+  #subscribe {
+    padding-bottom: 10vw;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  #footer a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav a {
+    font-size: 14px;
+  }
+
+  #heading h1 {
+    font-size: 14vw;
+  }
+
+  #herofooter {
+    font-size: 5vw;
+    padding: 10px 15px;
+  }
+
+  #about {
+    padding: 5vw 5vw;
+    gap: 20px;
+  }
+
+  #textabout {
+    width: 100%;
+  }
+
+  #textabout a {
+    padding: 10px 18px;
+    font-size: 10px;
+  }
+
+  #subscribe h5 {
+    font-size: 12px;
+  }
+
+  #subscribe h3 {
+    font-size: 12px;
+  }
+
+  #footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #footer a {
+    font-size: 12px;
+  }
 }
